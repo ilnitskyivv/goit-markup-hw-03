@@ -233,6 +233,9 @@ color: var(--primary-text-color);
 }
 
 /* features */
+.container.box {
+padding-bottom: 0;
+}
 
 .features {
 display: flex;
@@ -287,8 +290,8 @@ bottom: 2px;
 width: 380px;
 min-height: 70px;
 border-radius: 0px 0px 4px 4px;
-
 text-align: center;
+
 color: var(--primary-white-color);
 background: var(--work-title-bg);
 }
@@ -308,6 +311,7 @@ margin-right: 30px;
 }
 
 /* Team section */
+
 .team.section {
 background-color: var(--secondary-bg-color);
 }
