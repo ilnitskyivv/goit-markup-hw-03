@@ -17,6 +17,7 @@
 /* General styles */
 html {
 box-sizing: border-box;
+background-color: var(--external-area-bg)
 }
 
 *,
@@ -35,7 +36,7 @@ letter-spacing: 0.03em;
 line-height: 1.14;
 
 color: var(--primary-text-color);
-background-color: var(--external-area-bg);
+background-color: var(--primary-white-color);
 }
 
 .page {
@@ -43,8 +44,6 @@ max-width: 1600px;
 
 margin-left: auto;
 margin-right: auto;
-
-background-color: var(--primary-white-color);
 }
 
 .list {
@@ -440,7 +439,6 @@ padding-bottom: 28px;
 .logo.secondary {
 display: block;
 margin-bottom: 10px;
-
 
 font-size: 22px;
 line-height: 1.18;
