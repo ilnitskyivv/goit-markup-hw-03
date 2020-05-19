@@ -442,13 +442,13 @@ padding-bottom: 0;
 
 .footer-nav {
 display: flex;
+align-items: baseline;
 flex-direction: row;
 
 padding-bottom: 28px;
 }
 
 /* Footer logo */
-
 
 .logo.secondary {
 display: block;
@@ -459,8 +459,7 @@ line-height: 1.18;
 
 color: var(--primary-white-color);
 }
-
-    
+   
 /* address */
 
 .left-area {
@@ -471,7 +470,6 @@ width: 231px;
 
 .address {
 display: block;
-
 justify-items: flex-start;
 }
 
@@ -502,7 +500,6 @@ color: var(--primary-white-color);
 
 .mid-area {
 display: block;
-margin-top: 8px;
 margin-left: 69px;
 }
 
@@ -513,7 +510,6 @@ display: block;
 .right-area {
 display: flex;
 flex-direction: column;
-margin-top: 8px;
 margin-left: 94px;
 }
 
@@ -533,14 +529,7 @@ color: var(--footer-text-color);
 background-color: var(--footer-bg-color);
 }
 
-.signup-btn {
-display: inline-block;
-margin-top: 44px;
-margin-left: 12px;
-height: 50px;
-}
-
-.signup-btn .icon {
+.right-area .icon {
 display: inline-block;
 margin-left: 10px;
 vertical-align: middle;
