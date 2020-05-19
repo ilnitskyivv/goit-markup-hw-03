@@ -17,7 +17,6 @@
 /* General styles */
 html {
 box-sizing: border-box;
-background-color: var(--external-area-bg)
 }
 
 *,
@@ -40,8 +39,6 @@ background-color: var(--primary-white-color);
 }
 
 .page {
-width: 1600px;
-
 margin-left: auto;
 margin-right: auto;
 }
@@ -547,23 +544,19 @@ height: 50px;
 display: inline-block;
 margin-left: 10px;
 vertical-align: middle;
-
 }
 
-.bottom-area {
+.copyright {
 display: block;
 padding-top: 18px;
 padding-bottom: 21px;
+margin: 0;
 
 text-align: center;
-
-border-top: 1px solid rgba(255, 255, 255, 0.1);;
-}
-
-.site-devs {
 font-size: 12px;
 line-height: 2;
 
 color: var(--site-devs-text-color);
+border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 

@@ -73,11 +73,13 @@ margin-right: 0;
 margin-bottom: 0;
 }
 
-.product-look {
-margin-bottom: 20px;
+.product-content {
+display: inline-block;
+padding: 20px 24px;
 }
 
 .product-name {
+margin-top: 0;
 margin-bottom: 4px;
 
 font-weight: 700;
@@ -89,19 +91,11 @@ color: var(--primary-text-color);
 }
 
 .product-info {
-margin-bottom: 20px;
-
+margin: 0;
 font-size: 16px;
 line-height: 1.87;
 
 color: var(--secondary-text-color);
-}
-
-.product-name,
-.product-info {
-margin-top: 0;
-margin-left: 24px;
-margin-right: 24px;
 }
 
 .product-description {
