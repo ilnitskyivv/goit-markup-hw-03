@@ -109,7 +109,7 @@ padding-top: 32px;
 padding-bottom: 32px;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav > .item:not(:last-child) {
 margin-right: 50px;
 }
 
@@ -162,6 +162,7 @@ background-color: var(--footer-bg-color);
 }
 
 .hero-title {
+width: 646px;
 margin-top: 0;
 margin-bottom: 37px;
 
@@ -234,6 +235,19 @@ line-height: 1.17;
 text-align: center;
 
 color: var(--primary-text-color);
+}
+
+/* Features section */
+
+.visually-hidden {
+position: absolute !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+padding:0 !important;
+border:0 !important;
+height: 1px !important; 
+width: 1px !important; 
+overflow: hidden;
 }
 
 .features {
@@ -333,9 +347,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding-bottom: 24px;
-
 width: 270px;
-height: 422px;
 
 box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
