@@ -40,7 +40,7 @@ background-color: var(--primary-white-color);
 }
 
 .page {
-max-width: 1600px;
+width: 1600px;
 
 margin-left: auto;
 margin-right: auto;
@@ -62,7 +62,7 @@ color: var(--primary-text-color);
 margin-left: auto;
 margin-right: auto;
 padding: 94px 15px;
-max-width: 1230px;
+max-width: 1200px;
 /* outline: 2px solid red; */
 }
 
@@ -74,8 +74,6 @@ font-weight: 700;
 }
 
 .logo.primary {
-display: flex;
-align-items: center;
 padding-top: 24px;
 padding-bottom: 25px;
 
@@ -102,7 +100,7 @@ letter-spacing: 0.02em;
 
 .site-nav {
 display: flex;
-margin-left: 86px;
+margin-left: 85px;
 }
 
 .site-nav .link {
@@ -135,10 +133,16 @@ margin-left: auto;
 /* Site contscts navigation */
 
 .contacts-nav .link {
-display: block;
 padding-top: 32px;
 padding-bottom: 32px;
+
 color: var(--secondary-text-color);
+}
+
+.contacts-nav .icon {
+display: inline-block;
+margin-right: 10px;
+vertical-align: middle;
 }
 
 .contacts-nav .item:not(:last-child) {
@@ -159,13 +163,13 @@ background-color: var(--footer-bg-color);
 
 .hero-title {
 margin-top: 0;
-margin-bottom: 46px;
+margin-bottom: 37px;
 
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
-text-transform: uppercase;
+text-transform: uppercase;3
 }
 
 .hero .container {
@@ -196,6 +200,7 @@ height: 50px;
 font-weight: 700;
 line-height: 1.87;
 letter-spacing: 0.06em;
+vertical-align: middle;
 
 color: var(--primary-white-color);
 background-color: var(--accent-color);
@@ -231,11 +236,6 @@ text-align: center;
 color: var(--primary-text-color);
 }
 
-/* features */
-.container.box {
-padding-bottom: 0;
-}
-
 .features {
 display: flex;
 }
@@ -261,7 +261,7 @@ color: var(--secondary-text-color);
 
 .button.feature-btn {
 display: inline-block;
-width:  278px;
+width:  270px;
 height: 120px;
 
 padding: 25px 104px;
@@ -278,6 +278,10 @@ background-color: var(--accent-color);
 
 /* Work section */
 
+.container.work {
+border-top: 1px solid #ECECEC;
+}
+
 .uptitle.work-title {
 margin-bottom: 0;
 padding-top: 27px;
@@ -286,7 +290,7 @@ padding-bottom: 27px;
 position: absolute;
 bottom: 2px;
 
-width: 380px;
+width: 370px;
 min-height: 70px;
 border-radius: 0px 0px 4px 4px;
 text-align: center;
@@ -328,8 +332,9 @@ display: flex;
 display: flex;
 flex-direction: column;
 align-items: center;
+padding-bottom: 24px;
 
-width: 278px;
+width: 270px;
 height: 422px;
 
 box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -403,7 +408,7 @@ flex-direction: row;
 align-items: center;
 justify-content: center;
 
-width: 175px;
+width: 170px;
 height: 90px;
 
 border-radius: 4px;
@@ -450,7 +455,7 @@ color: var(--primary-white-color);
 /* address */
 
 .left-area {
-display: flex;
+display: block;
 flex-direction: column;
 width: 231px;
 }
@@ -489,7 +494,7 @@ color: var(--primary-white-color);
 .mid-area {
 display: block;
 margin-top: 8px;
-margin-left: 179px;
+margin-left: 69px;
 }
 
 .mid-area .item {
@@ -500,7 +505,37 @@ display: block;
 display: flex;
 flex-direction: column;
 margin-top: 8px;
-margin-left: 102px;
+margin-left: 94px;
+}
+
+.email {
+padding: 18px 12px;
+width: 358px;
+height: 50px;
+
+font-size: 16px;
+line-height: 1.87;
+
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+color: var(--footer-text-color);
+background-color: var(--footer-bg-color);
+}
+
+.signup-btn {
+display: inline-block;
+margin-top: 44px;
+margin-left: 12px;
+height: 50px;
+}
+
+.signup-btn .icon {
+display: inline-block;
+margin-left: 10px;
+vertical-align: middle;
+
 }
 
 .bottom-area {
@@ -509,11 +544,11 @@ padding-top: 18px;
 padding-bottom: 21px;
 
 text-align: center;
+
+border-top: 1px solid rgba(255, 255, 255, 0.1);;
 }
 
 .site-devs {
-margin-bottom: 0;
-
 font-size: 12px;
 line-height: 2;
 
