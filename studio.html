@@ -11,18 +11,32 @@
 <body class="page">
     <!-- Шапка сайта -->
     <header class="page-header">
-        <div class="container nav">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo primary link"><span class="logo-style">Web </span>Studio</a>
-                <ul class="list nav site-nav">
-                    <li class="item"><a href="./studio.html" class="link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="./contacts.html" class="link">Контакты</a></li>
+        <div class="container header-container">
+            <nav class="nav">
+                <a href="./index.html" class="logo logo__primary link">
+                    <span class="logo__style">Web </span>Studio
+                </a>
+                <ul class="list site-nav">
+                    <li class="site-nav__item">
+                        <a href="./studio.html" class="link site-nav__link site-nav__link--current">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="link site-nav__link" aria-current="true">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./contacts.html" class="link site-nav__link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="list nav contacts-nav">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link"><img src="./images/envelope.svg" alt="Конверт" class="icon">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link"><img src="./images/smartphone.svg" alt="Смартфон" class="icon">+38 096 111 11 11</a></li>
+            <ul class="list contacts-nav">
+                <li class="contacts-nav__item"><a href="mailto:info@devstudio.com" class="link contacts-nav__link">
+                    <img src="./images/envelope.svg" alt="Конверт" class="contacts-nav__icon">info@devstudio.com
+                </a>
+            </li>
+                <li class="contacts-nav__item"><a href="tel:+380961111111" class="link contacts-nav__link">
+                    <img src="./images/smartphone.svg" alt="Смартфон" class="contacts-nav__icon">+38 096 111 11 11
+                </a>
+            </li>
             </ul>
         </div>
     </header>
@@ -32,31 +46,51 @@
     </main>
     <!-- Связь с веб студией -->
     <footer class="page-footer">
-        <div class="container footer">
-            <div class="footer-nav">
-                <div class="left-area">
-                    <a href="./index.html" class="logo secondary link" aria-current="true"><span class="logo-style">Web </span>Studio</a>
+        <div class="container footer-container">
+            <div class="footer__content">
+                <div class="footer__left-area">
+                    <a href="./index.html" class="logo logo__secondary link" aria-current="true">
+                        <span class="logo__style">Web </span>Studio
+                    </a>
                     <address class="address">
-                        <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="location link">г. Киев, пр-т Леси Украинки, 26</a>
-                        <a href="mailto:info@example.com" class="link">info@example.com</a>
-                        <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+                        <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="address__location address__item link">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a href="mailto:info@example.com" class="address__item link">info@example.com</a>
+                        <a href="tel:+380991111111" class="address__item link">+38 099 111 11 11</a>
                     </address>
                 </div>
-                <div class="mid-area">
-                    <b class="uptitle signup-title">Присоединяйтесь</b>    
-                    <ul class="social list">
-                        <li class="item"><a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram"><img src="./images/ellipsef1.svg" alt="Логотип Instagram"></a></li>
-                        <li class="item"><a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter"><img src="./images/ellipsef2.svg" alt="Логотип Twitter"></a></li>
-                        <li class="item"><a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook"><img src="./images/ellipsef3.svg" alt="Логотип Facebook"></a></li>
-                        <li class="item"><a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin"><img src="./images/ellipsef4.svg" alt="Логотип Linkedin"></a></li>
+                <div class="footer__mid-area">
+                    <b class="uptitle footer__signup-title">Присоединяйтесь</b>    
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram">
+                                <img src="./images/ellipsef1.svg" alt="Логотип Instagram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter">
+                                <img src="./images/ellipsef2.svg" alt="Логотип Twitter">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook">
+                                <img src="./images/ellipsef3.svg" alt="Логотип Facebook">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin">
+                                <img src="./images/ellipsef4.svg" alt="Логотип Linkedin">
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="right-area">
-                    <b class="uptitle signup-title">Подпишитесь на рассылку</b>
-                    <a href="" class="button primary">Подписаться<img src="./images/icon.svg" alt="Бумажный самолет" class="icon"></a>
+                <div class="footer__right-area">
+                    <b class="uptitle footer__signup-title">Подпишитесь на рассылку</b>
+                    <a href="" class="button button__primary">Подписаться
+                        <img src="./images/icon.svg" alt="Бумажный самолет" class="button__icon">
+                    </a>
                 </div>
             </div>
-            <p lang="en" class="copyright">2020 | Developed by GoIT Students</p>
+            <p lang="en" class="footer__copyright">2020 | Developed by GoIT Students</p>
         </div>
     </footer>
 </body>

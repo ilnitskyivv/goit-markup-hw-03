@@ -9,157 +9,260 @@
     <link rel="stylesheet" href="./css/portfolio.css">
     <title>Web Studio</title>
 </head>
-<body class="page">
+<body>
     <!-- Шапка сайта -->
     <header class="page-header">
-        <div class="container nav">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo primary link" aria-current="true"><span class="logo-style">Web </span>Studio</a>
-                <ul class="list nav site-nav">
-                    <li class="item"><a href="./studio.html" class="link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="./contacts.html" class="link">Контакты</a></li>
+        <div class="container header-container">
+            <nav class="nav">
+                <a href="./index.html" class="logo logo__primary link" aria-current="true">
+                    <span class="logo__style">Web </span>Studio
+                </a>
+                <ul class="list site-nav">
+                    <li class="site-nav__item">
+                        <a href="./studio.html" class="link site-nav__link">Студия</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./portfolio.html" class="link site-nav__link">Портфолио</a>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="./contacts.html" class="link site-nav__link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="list nav contacts-nav">
-                <li class="item"><a href="mailto:info@devstudio.com" class="link"><img src="./images/envelope.svg" alt="Конверт" class="icon">info@devstudio.com</a></li>
-                <li class="item"><a href="tel:+380961111111" class="link"><img src="./images/smartphone.svg" alt="Смартфон" class="icon">+38 096 111 11 11</a></li>
+            <ul class="list contacts-nav">
+                <li class="contacts-nav__item">
+                    <a href="mailto:info@devstudio.com" class="link contacts-nav__link">
+                    <img src="./images/envelope.svg" alt="Конверт" class="contacts-nav__icon">info@devstudio.com
+                </a>
+                </li>
+                <li class="contacts-nav__item">
+                    <a href="tel:+380961111111" class="link contacts-nav__link">
+                        <img src="./images/smartphone.svg" alt="Смартфон" class="contacts-nav__icon">+38 096 111 11 11
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
     <main>
     <!-- Герой -->
     <section class="hero">
-        <div class="container">
-            <h1 class="hero hero-title">Эффективные решения для вашего бизнеса</h1>
-            <a href="" class="hero button primary">Заказать услугу</a>
+        <div class="container hero__container">
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <a href="" class="button button__primary">Заказать услугу</a>
         </div>
     </section>
     <!-- Преимущества -->
-    <section class="section">
+    <section class="features-section">
         <div class="container">
             <h2 class="visually-hidden">Наш подход</h2>
             <ul class="list features">
-                <li class="item">
-                    <a href="" aria-label="Антенна" class="button feature-btn"><img src="./images/antenna1.svg" alt="Антенна" class="btn-icon"></a>
-                    <h3 class="uptitle features-title">Внимание к деталям</h3>
-                    <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                <li class="features__item">
+                    <a href="" aria-label="Антенна" class="button features__button">
+                        <img src="./images/antenna1.svg" alt="Антенна" class="features__icon">
+                    </a>
+                    <h3 class="uptitle features__title">Внимание к деталям</h3>
+                    <p class="features__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Часы" class="button feature-btn"><img src="./images/clock1.svg" alt="Часы" class="btn-icon"></a>
-                    <h3 class="uptitle features-title">Пунктуальность</h3>
-                    <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                <li class="features__item">
+                    <a href="" aria-label="Часы" class="button features__button">
+                        <img src="./images/clock1.svg" alt="Часы" class="features__icon">
+                    </a>
+                    <h3 class="uptitle features__title">Пунктуальность</h3>
+                    <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Диаграмма" class="button feature-btn"><img src="./images/diagram1.svg" alt="Диаграмма" class="btn-icon"></a>
-                    <h3 class="uptitle features-title">Планирование</h3>
-                    <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                <li class="features__item">
+                    <a href="" aria-label="Диаграмма" class="button features__button">
+                        <img src="./images/diagram1.svg" alt="Диаграмма" class="features__icon">
+                    </a>
+                    <h3 class="uptitle features__title">Планирование</h3>
+                    <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Астронавт" class="button feature-btn"><img src="./images/astronaut1.svg" alt="Астронавт" class="btn-icon"></a>
-                    <h3 class="uptitle features-title">Современные технологии</h3>
-                    <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                <li class="features__item">
+                    <a href="" aria-label="Астронавт" class="button features__button">
+                        <img src="./images/astronaut1.svg" alt="Астронавт" class="features__icon">
+                    </a>
+                    <h3 class="uptitle features__title">Современные технологии</h3>
+                    <p class="features__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
             </div>
     </section>
     <!-- Виды услуг -->
-    <section class="section">
-        <div class="container work">
-            <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list work-list">
-                <li class="item">
-                    <a href="" class="link"><img src="./images/desktopapps.jpg" alt="Ноутбук в работе" width="370">
-                        <h3 class="uptitle work-title text-block">Десктопные приложения</h3>
+    <section class="work-section">
+        <div class="container work-container">
+            <h2 class="section__title">Чем мы занимаемся</h2>
+            <ul class="list work">
+                <li class="work__item">
+                    <a href="" class="link">
+                        <img src="./images/desktopapps.jpg" alt="Ноутбук в работе" width="370" height="294">
+                        <h3 class="uptitle work__title text-block">Десктопные приложения</h3>
                     </a>                    
                 </li>
-                <li class="item">
-                    <a href="" class="link"><img src="./images/cellphoneapps.jpg" alt="Мобильный телефон" width="370">
-                        <h3 class="uptitle work-title  text-block">Мобильные приложения</h3>
+                <li class="work__item">
+                    <a href="" class="link">
+                        <img src="./images/cellphoneapps.jpg" alt="Мобильный телефон" width="370" height="294">
+                        <h3 class="uptitle work__title  text-block">Мобильные приложения</h3>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="" class="link"><img src="./images/design.jpg" alt="Дизайн проекта на мониторе" width="370">
-                        <h3 class="uptitle work-title  text-block">Дизайнерские решения</h3>
+                <li class="work__item">
+                    <a href="" class="link">
+                        <img src="./images/design.jpg" alt="Дизайн проекта на мониторе" width="370" height="294">
+                        <h3 class="uptitle work__title  text-block">Дизайнерские решения</h3>
                     </a>
                 </li>
             </ul>
         </div>
     </section>
     <!-- Члены команды веб студии -->
-    <section class="team section">
+    <section class="team-section">
         <div class="container">
-            <h2 class="section-title">Наша команда</h2>
-            <ul class="team list">
-                <li class="item">
-                    <img src="./images/john-smith.jpg" width="270" alt="John Smith Photo" class="team-member-photo">
-                    <h3 lang="en" class="team-member-name">John Smith</h3>
-                    <p lang="en" class="team-member-position">Product Designer</p>
-                    <ul class="social list">
-                        <li class="item"><a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram"><img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram"></a></li>
-                        <li class="item"><a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter"><img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter"></a></li>
-                        <li class="item"><a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook"><img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook"></a></li>
-                        <li class="item"><a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin"><img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin"></a></li>
+            <h2 class="section__title">Наша команда</h2>
+            <ul class="team-members list">
+                <li class="team-members__item">
+                    <img src="./images/john-smith.jpg" width="270" height="260" alt="John Smith Photo" class="team-members__pic">
+                    <h3 lang="en" class="team-members__name">John Smith</h3>
+                    <p lang="en" class="team-members__pos">Product Designer</p>
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram">
+                                <img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter">
+                                <img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook">
+                                <img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin">
+                                <img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin">
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class="item">
-                    <img src="./images/marta-stewart.jpg" width="270" alt="Marta Stewart Photo" class="team-member-photo">
-                    <h3 lang="en" class="team-member-name">Marta Stewart</h3>
-                    <p lang="en" class="team-member-position">Frontend Developer</p>
-                    <ul class="social list">
-                        <li class="item"><a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram"><img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram"></a></li>
-                        <li class="item"><a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter"><img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter"></a></li>
-                        <li class="item"><a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook"><img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook"></a></li>
-                        <li class="item"><a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin"><img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin"></a></li>
+                <li class="team-members__item">
+                    <img src="./images/marta-stewart.jpg" width="270" height="260" alt="Marta Stewart Photo" class="team-members__pic">
+                    <h3 lang="en" class="team-members__name">Marta Stewart</h3>
+                    <p lang="en" class="team-members__pos">Frontend Developer</p>
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram">
+                                <img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter">
+                                <img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook">
+                                <img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin">
+                                <img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin">
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class="item">
-                    <img src="./images/robert-jakis.jpg" width="270" alt="Robert Jakis Photo" class="team-member-photo">
-                    <h3 lang="en" class="team-member-name">Robert Jakis</h3>
-                    <p lang="en" class="team-member-position">Marketing</p>
-                    <ul class="social list">
-                        <li class="item"><a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram"><img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram"></a></li>
-                        <li class="item"><a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter"><img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter"></a></li>
-                        <li class="item"><a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook"><img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook"></a></li>
-                        <li class="item"><a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin"><img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin"></a></li>
+                <li class="team-members__item">
+                    <img src="./images/robert-jakis.jpg" width="270" height="260" alt="Robert Jakis Photo" class="team-members__pic">
+                    <h3 lang="en" class="team-members__name">Robert Jakis</h3>
+                    <p lang="en" class="team-members__pos">Marketing</p>
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram">
+                                <img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter">
+                                <img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook">
+                                <img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin">
+                                <img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin">
+                            </a>
+                        </li>
                     </ul>
                 </li>
-                <li class="item">
-                    <img src="./images/martin-doe.jpg" width="270" alt="Martin Doe Photo" class="team-member-photo">
-                    <h3 lang="en" class="team-member-name">Martin Doe</h3>
-                    <p lang="en" class="team-member-position">UI Designer</p>
-                    <ul class="social list">
-                        <li class="item"><a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram"><img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram"></a></li>
-                        <li class="item"><a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter"><img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter"></a></li>
-                        <li class="item"><a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook"><img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook"></a></li>
-                        <li class="item"><a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin"><img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin"></a></li>
+                <li class="team-members__item">
+                    <img src="./images/martin-doe.jpg" width="270" height="260" alt="Martin Doe Photo" class="team-members__pic">
+                    <h3 lang="en" class="team-members__name">Martin Doe</h3>
+                    <p lang="en" class="team-members__pos">UI Designer</p>
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram">
+                                <img src="./images/ellipse1.svg" alt="Логотип Instagram" title="Профиль в Instagram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter">
+                                <img src="./images/ellipse2.svg" alt="Логотип Twitter" title="Профиль в Twitter">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook">
+                                <img src="./images/ellipse3.svg" alt="Логотип Facebook" title="Профиль в Facebook">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin">
+                                <img src="./images/ellipse4.svg" alt="Логотип Linkedin" title="Профиль в Linkedin">
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
     </section>
     <!-- Клиенты веб студии -->
-    <section class="clients section">
-        <div class="container">
-            <h2 class="section-title">Постоянные клиенты</h2>
+    <section class="clients-section">
+        <div class="container clients-container">
+            <h2 class="section__title">Постоянные клиенты</h2>
             <ul class="clients list">
-                <li class="item">
-                    <a href="" aria-label="YA & CO" class="rectangle" title="YA & CO"><img src="./images/logo1.svg" alt="YA & CO"></a>
+                <li class="clients__item">
+                    <a href="" aria-label="YA & CO" class="clients__rectangle" title="YA & CO">
+                        <img src="./images/logo1.svg" alt="YA & CO">
+                    </a>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Company tagline here" class="rectangle" title="Company tagline here"><img src="./images/logo2.svg" alt="Company tagline here"></a>
+                <li class="clients__item">
+                    <a href="" aria-label="Company tagline here" class="clients__rectangle" title="Company tagline here">
+                        <img src="./images/logo2.svg" alt="Company tagline here">
+                    </a>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Company" class="rectangle" title="Company"><img src="./images/logo3.svg" alt="Company"></a>
+                <li class="clients__item">
+                    <a href="" aria-label="Company" class="clients__rectangle" title="Company">
+                        <img src="./images/logo3.svg" alt="Company">
+                    </a>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Foster Peters" class="rectangle"  title="Foster Peters"><img src="./images/logo4.svg" alt="Foster Peters"></a>
+                <li class="clients__item">
+                    <a href="" aria-label="Foster Peters" class="clients__rectangle"  title="Foster Peters">
+                        <img src="./images/logo4.svg" alt="Foster Peters">
+                    </a>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Brand" class="rectangle" title="Brand"><img src="./images/logo5.svg" alt="Brand"></a>
+                <li class="clients__item">
+                    <a href="" aria-label="Brand" class="clients__rectangle" title="Brand">
+                        <img src="./images/logo5.svg" alt="Brand">
+                    </a>
                 </li>
-                <li class="item">
-                    <a href="" aria-label="Company Tag Line" class="rectangle" title="Company Tag Line"><img src="./images/logo6.svg" alt="Company Tag Line"></a>
+                <li class="clients__item">
+                    <a href="" aria-label="Company Tag Line" class="clients__rectangle" title="Company Tag Line">
+                        <img src="./images/logo6.svg" alt="Company Tag Line">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -167,31 +270,51 @@
     </main>
     <!-- Связь с веб студией -->
     <footer class="page-footer">
-        <div class="container footer">
-            <div class="footer-nav">
-                <div class="left-area">
-                    <a href="./index.html" class="logo secondary link" aria-current="true"><span class="logo-style">Web </span>Studio</a>
+        <div class="container footer-container">
+            <div class="footer__content">
+                <div class="footer__left-area">
+                    <a href="./index.html" class="logo logo__secondary link" aria-current="true">
+                        <span class="logo__style">Web </span>Studio
+                    </a>
                     <address class="address">
-                        <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="location link">г. Киев, пр-т Леси Украинки, 26</a>
-                        <a href="mailto:info@example.com" class="link">info@example.com</a>
-                        <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+                        <a href="https://goo.gl/maps/ZH45Ejz193mU29eU7" target="_blank" class="address__location address__item link">г. Киев, пр-т Леси Украинки, 26</a>
+                        <a href="mailto:info@example.com" class="address__item link">info@example.com</a>
+                        <a href="tel:+380991111111" class="address__item link">+38 099 111 11 11</a>
                     </address>
                 </div>
-                <div class="mid-area">
-                    <b class="uptitle signup-title">Присоединяйтесь</b>    
-                    <ul class="social list">
-                        <li class="item"><a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram"><img src="./images/ellipsef1.svg" alt="Логотип Instagram"></a></li>
-                        <li class="item"><a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter"><img src="./images/ellipsef2.svg" alt="Логотип Twitter"></a></li>
-                        <li class="item"><a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook"><img src="./images/ellipsef3.svg" alt="Логотип Facebook"></a></li>
-                        <li class="item"><a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin"><img src="./images/ellipsef4.svg" alt="Логотип Linkedin"></a></li>
+                <div class="footer__mid-area">
+                    <b class="uptitle footer__signup-title">Присоединяйтесь</b>    
+                    <ul class="socials list">
+                        <li class="socials__item">
+                            <a href="https://www.instagram.com/" target="_blank" aria-label="Логотип Instagram" title="Подписывайтесь в Instagram">
+                                <img src="./images/ellipsef1.svg" alt="Логотип Instagram">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://twitter.com/" target="_blank" aria-label="Логотип Twitter" title="Подписывайтесь в Twitter">
+                                <img src="./images/ellipsef2.svg" alt="Логотип Twitter">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/" target="_blank" aria-label="Логотип Facebook" title="Подписывайтесь в Facebook">
+                                <img src="./images/ellipsef3.svg" alt="Логотип Facebook">
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="Логотип Linkedin" title="Подписывайтесь в Linkedin">
+                                <img src="./images/ellipsef4.svg" alt="Логотип Linkedin">
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="right-area">
-                    <b class="uptitle signup-title">Подпишитесь на рассылку</b>
-                    <a href="" class="button primary">Подписаться<img src="./images/icon.svg" alt="Бумажный самолет" class="icon"></a>
+                <div class="footer__right-area">
+                    <b class="uptitle footer__signup-title">Подпишитесь на рассылку</b>
+                    <a href="" class="button button__primary">Подписаться
+                        <img src="./images/icon.svg" alt="Бумажный самолет" class="button__icon">
+                    </a>
                 </div>
             </div>
-            <p lang="en" class="copyright">2020 | Developed by GoIT Students</p>
+            <p lang="en" class="footer__copyright">2020 | Developed by GoIT Students</p>
         </div>
     </footer>
 </body>
