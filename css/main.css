@@ -50,10 +50,16 @@ text-decoration: none;
 color: var(--primary-text-color);
 }
 
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
 .container {
 margin-left: auto;
 margin-right: auto;
-padding: 94px 15px;
+padding-left: 15px;
+padding-right: 15px;
 max-width: 1200px;
 /* outline: 2px solid red; */
 }
@@ -68,6 +74,24 @@ border-radius: 4px;
 border-color: transparent;
 }
 
+/* Header */
+
+.header-container {
+display: flex;
+align-items: center;
+margin-top: 0;
+padding-top: 0;
+padding-bottom: 0;
+
+font-weight: 500;
+letter-spacing: 0.02em;
+}
+
+.nav {
+display: flex;
+align-items: center;
+}
+    
 /* Logo  */
 
 .logo {
@@ -87,18 +111,7 @@ line-height: 1.19;
 color: var(--accent-color);
 }
 
-/* Website nav */
-
-.header-container {
-display: flex;
-align-items: center;
-margin-top: 0;
-padding-top: 0;
-padding-bottom: 0;
-
-font-weight: 500;
-letter-spacing: 0.02em;
-}
+/* Site navigation */
 
 .site-nav {
 display: flex;
@@ -120,20 +133,16 @@ padding-bottom: 32px;
 margin-right: 50px;
 }
 
-
-/* Main navigation */
-
-.nav {
-display: flex;
-align-items: center;
-}
+/* Contacts navigation */
 
 .contacts-nav {
 display: flex;
 margin-left: auto;
 }
 
-/* Site contacts navigation */
+.contacts-nav__item:not(:last-child) {
+margin-right: 30px;
+}
 
 .contacts-nav__link {
 padding-top: 32px;
@@ -142,19 +151,32 @@ padding-bottom: 32px;
 color: var(--secondary-text-color);
 }
 
-.contacts-nav__icon {
-display: inline-block;
-margin-right: 10px;
-vertical-align: middle;
-}
-
 .contacts-nav__link:hover,
 .contacts-nav__link:focus {
-    color: var(--accent-color);
+color: var(--accent-color);
 }
 
-.contacts-nav__item:not(:last-child) {
-margin-right: 30px;
+.contacts-nav__link::before {
+content: "";
+display: inline-block;
+vertical-align: middle;
+margin-right: 10px;
+
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.icon-envelope::before {
+background-image: url(../images/envelope.svg);
+width: 16px;
+height: 11.2px;
+}
+
+.icon-smartphone::before {
+background-image: url(../images/smartphone.svg);
+width: 10px;
+height: 14.94px;
 }
 
 /* hero section */
@@ -177,7 +199,8 @@ background-size: cover;
 
 }
 .hero__container {
-padding: 200px 277px;
+margin-bottom: 0;
+padding: 200px 277px 195px 277px;
 color: var(--primary-white-color);
 }
 
@@ -217,21 +240,6 @@ margin-left: 10px;
 vertical-align: middle;
 }
 
-/* Uppercase titles */
-
-.uptitle {
-margin-top: 0;
-
-font-size: inherit;
-font-weight: 700;
-text-transform: uppercase;
-}
-
-/* Section */
-
-.section {
-}
-
 /* General section title*/
 
 .section__title {
@@ -246,7 +254,21 @@ text-align: center;
 color: var(--primary-text-color);
 }
 
+/* Uppercase titles */
+
+.uptitle {
+margin-top: 0;
+
+font-size: inherit;
+font-weight: 700;
+text-transform: uppercase;
+}
+
 /* Features section */
+
+.features-section {
+padding-bottom: 0;
+}
 
 .visually-hidden {
 position: absolute !important;
@@ -261,6 +283,9 @@ overflow: hidden;
 
 .features {
 display: flex;
+padding-bottom: 94px;
+
+border-bottom:  1px solid #ECECEC;
 }
 
 .features__title {
@@ -309,10 +334,6 @@ color: var(--secondary-text-color);
 
 /* Work section */
 
-.work-container {
-border-top: 1px solid #ECECEC;
-}
-
 .work__title {
 margin-bottom: 0;
 padding-top: 27px;
@@ -346,7 +367,7 @@ margin-right: 30px;
 
 /* Team section */
 
-.team-section {
+.team-members-section {
 background-color: var(--secondary-bg-color);
 }
 
@@ -401,6 +422,10 @@ display: flex;
 flex-direction: row;
 }
 
+.socials__item:not(:last-child) {
+margin-right: 10px;
+}
+
 .socials__link {
 content: "";
 display: inline-block;
@@ -412,14 +437,23 @@ background-repeat: no-repeat;
 background-position: center;
 }
 
-/* .socials__item:hover,
-.socials__item:focus {
+.socials__link:hover,
+.socials__link:focus {
 border-radius:50%;
 background-color: var(--accent-color);
-} */
+}
 
-.socials__item:not(:last-child) {
-margin-right: 10px;
+.tm-insta-icon {
+background-image: url(../images/ellipse1.svg);
+}
+.tm-twit-icon {
+background-image: url(../images/ellipse2.svg);
+}
+.tm-fb-icon {
+background-image: url(../images/ellipse3.svg);
+}
+.tm-link-icon {
+background-image: url(../images/ellipse4.svg);
 }
 
 /* Clients section */
@@ -534,7 +568,6 @@ margin-left: 69px;
 
 .ftr-insta-icon {
 background-image: url(../images/ellipsef1.svg);
-border-radius: 50%;
 }
 
 .ftr-twit-icon {
@@ -547,12 +580,6 @@ background-image: url(../images/ellipsef3.svg);
 
 .ftr-link-icon {
 background-image: url(../images/ellipsef4.svg);
-}
-
-.socials__link:hover,
-.socials__link:focus {
-border-radius:50%;
-background-color: var(--accent-color);
 }
 
 .footer__right-area {
